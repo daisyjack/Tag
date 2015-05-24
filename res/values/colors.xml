@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_firstln">#000000</color>
+    <color name="status_bar_background">#efefef</color>
+    <color name="hover_color">#f1e7e5</color>
+	<color name="text">#ffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="tag_info_color">#eeb000</color>
+	<color name="tag_name_color">#707070</color>
+	<color name="white">#ffffff</color>
+</resources>

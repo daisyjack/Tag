@@ -1,0 +1,400 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f0f0f0"
+    tools:context="com.tag2.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:src="@android:drawable/alert_dark_frame" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回上级" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="10dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/imgparenttag"
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/parent_tag" />
+
+        <TextView
+            android:id="@+id/txtdqdw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgparenttag"
+            android:layout_marginLeft="2.2dp"
+            android:layout_toRightOf="@+id/imgparenttag"
+            android:text="当前定位：" />
+
+        <TextView
+            android:id="@+id/txttagname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgparenttag"
+            android:layout_marginLeft="2.2dp"
+            android:layout_toRightOf="@+id/txtdqdw"
+            android:text="俞佳" />
+
+        <ImageButton
+            android:id="@+id/btnaddfriend"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imgparenttag"
+            android:layout_marginRight="7dp"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_friend" />
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btnaddfriend"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/imgparenttag"
+            android:scaleType="centerInside"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/personname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/touxiang"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/touxiang"
+            android:text="俞佳"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/personname"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@+id/personname"
+            android:textColor="@color/lightgrey"
+            android:text="(Yoga)" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/subname"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/subname"
+            android:text="♀"
+            android:textColor="@color/girlpink"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/personname"
+            android:layout_alignRight="@+id/btnaddfriend"
+            android:textColor="@color/orange"
+            android:text="By 颜慧洁" />
+
+        <TextView
+            android:id="@+id/signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/personname"
+            android:layout_below="@+id/personname"
+            android:text="心情时好时坏，怎么开始怎么办"
+            android:textColor="@color/lightgrey"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:id="@+id/numberslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/signature"
+            android:layout_below="@+id/signature" >
+
+            <TextView
+                android:id="@+id/numscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="4.88"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/numsubtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="4600"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/numcontributor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="352"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/numlove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="341"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txtlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/numberslayout"
+            android:layout_below="@+id/numberslayout" >
+
+            <TextView
+                android:id="@+id/txtscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="评分"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtsubtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="子标签"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtcontributor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="贡献者"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtlove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="喜欢"
+                android:textColor="@color/orange"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/txtlayout"
+            android:layout_alignRight="@+id/btnaddfriend"
+            android:layout_marginTop="5dp"
+            
+            android:background="#ffffff"
+            android:src="@drawable/btn_more" />
+		<ImageButton
+            android:id="@+id/btnlove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/txtlayout"
+            android:layout_toLeftOf="@+id/btnmore"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:src="@drawable/btn_love" />
+		<ImageButton
+            android:id="@+id/btnconcern"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/txtlayout"
+            android:layout_toLeftOf="@+id/btnlove"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:src="@drawable/btn_concern" />
+		<ImageButton
+            android:id="@+id/btnsendto"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_below="@+id/txtlayout"
+            android:layout_toLeftOf="@+id/btnconcern"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:src="@drawable/btn_sendto" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="邮箱"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Yoganice@foxmail.com" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/dianhua"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="电话"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/contentphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="18868100000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/zhuzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="住址"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/contentaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="浙江省杭州市西湖区浙江大学西溪校区创业大厦" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/youbian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="邮编"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/contentzipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="310000" />
+
+        </TableRow>
+        <TableRow 
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/techang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="特长"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/contentskill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="打豆豆" />
+            
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

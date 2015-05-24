@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#EEB000</color>
+    <color name="girlpink">#FFB0E8</color>
+    <color name="boyblue">#0492DA</color>
+    <color name="lightgrey">#7F7F7F</color>
+    <color name="textblue">#4B86FF</color>
+    <color name="yellow">#FAEF47</color>
+</resources>

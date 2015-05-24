@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tag_tab_titles">
+        <item>最新TAG</item>
+        <item>认证TAG</item>
+    </string-array>
+</resources>

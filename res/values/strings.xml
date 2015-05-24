@@ -1,0 +1,28 @@
+﻿<resources>
+
+    <string name="app_name">Tag</string>
+    <string name="current_tag">当前定位：</string>
+    <string name="mark">评分</string>
+    <string name="son_tag">子标签</string>
+    <string name="contributer">贡献者</string>
+    <string name="liker">喜欢</string>
+    <string name="by">By </string>
+    <string name="back_to_father">返回上级：</string>
+	<string name="action_settings">设置</string>
+	<string name="listview_footer_hint_normal">查看更多</string>
+	<string name="listview_footer_hint_ready">载入更多</string>
+	<string name="listview_header_pull_down">下拉刷新</string>
+	<string name="listview_footer_release">放开刷新数据</string>
+    <!-- 转发 -->
+    <string name="share_url">http://121.40.88.229:3000/tags/copy</string>
+    <!-- 取消转发 -->
+    <string name="unshare_url">http://121.40.88.229:3000/tags/uncopy</string>
+    <!-- 关注 -->
+    <string name="follow_url">http://121.40.88.229:3000/tags/like</string>
+    <!-- 取消关注 -->
+    <string name="unfollow_url">http://121.40.88.229:3000/tags/unlike</string>
+    <!-- 点赞 -->
+    <string name="like_url">http://121.40.88.229:3000/tags/thumbsup</string>
+    <!-- 取消点赞 -->
+    <string name="unlike_url">http://121.40.88.229:3000/tags/thumbsdown</string>
+</resources>

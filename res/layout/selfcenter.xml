@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tag="http://schemas.android.com/apk/res/mengcheng.tag.frontend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:orientation="vertical" >
+
+            <!-- <com.tag.circleimage.CustomImageView
+                android:id="@+id/customImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                tag:type="circle"/>  -->
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/imgTest"
+                android:src="@drawable/touxiang"
+                android:scaleType="centerInside"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+				<Space
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="3dp"/>
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:text="俞佳" 
+                    android:layout_margin="3dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:src="@drawable/btn_edit" 
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"/>
+                
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心情好心情坏，怎么开始怎么办"
+                android:textSize="13dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+    </ScrollView>
+    
+	<ImageButton
+        android:id="@+id/btnSelfBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft = "5dp"
+        android:src="@drawable/btn_self_back" />
+
+    <ImageButton
+        android:id="@+id/btnSelfCamera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight = "5dp"
+        android:src="@drawable/btn_self_camera" />
+    <include 
+		layout="@layout/footer"
+		android:id="@+id/bottom_choice"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"/>
+</RelativeLayout>
